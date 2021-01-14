@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+           .con
+            {
+                background-image: url("./image/pharm.jpg");
+                height: 470px;
+                /* width: auto;  */
+                background-position: center;
+                background-size: cover;
+
+            }
+            #buy_fun {
+                width:  80px;
+                height: 50px ;
+            }
+            #done{
+                width:  80px;
+                height: 50px ;
+                margin-left: 100px;
+            }
+            #quan{
+                width:  120px;
+            }
+            #text1{
+                background-color:  white;
+                margin-left: 30%;
+                width: 170px;
+                text-align: center;
+
+            }
+            label{
+                width:  100px;
+            }
+
+            #videoElement {
+            width: 100px;
+            height: 100px;
+            background-color:rgb(80, 68, 63);
+            }
+            #showscreenshot
+            {
+                width: 100px;
+                height: 100px;
+            }
+           
+            
+        </style>
+    </head>
+
+    <body>
+      
+        <header class="border bg-dark text-light py-3 m-0">
+            <div class="container">
+                <div class="input-group-append">
+                    <h3 id="name" class=" mr-auto"> Hi </h3>
+                    <button id="sign" class="btn btn-secondary "> sign out</button>
+                 </div>  
+            </div>
+        </header>
+
+        <div class="con m-0">
+            <div class="container">
+                <form >
+                    <label for="dname" class="my-3">Name</label>
+                    <select id="dname" class="my-3" >
+                        <option value="1" selected >Buy new item</option>
+                    </select>
+                    <label for="new" class="m-3 text-right" >New name</label>
+                    <input id="new" type="text" class="my-3" >
+                    <p class="text-danger" id="text1">Item already exist</p>
+                    <br>
+                    <label for="quan" class="mt-3 ">Quantity</label>
+                    <input id="quan" type="number" >
+                    <br>
+                    
+                    <div>  <video autoplay="true" id="videoElement" class="mt-3"> </video>
+                        <canvas id="showscreenshot" class=".d-none" ></canvas> </div>
+                    <button onclick="play();" id="pic" type="button" class="btn btn-primary my-3"> Add image</button>
+                    <button  onclick="takescreenshot();" id="pic" type="button" class="btn btn-primary m-3"> take image</button>
+                    
+
+                    <br>
+                    <button id="buy_fun" type="button" class="btn btn-primary my-3"> buy</button>
+                    <button id="done" type="button" class="btn btn-primary my-3">Back</button>
+
+                </form>
+            </div>
+        </div>
+
+        <footer class="border bg-dark text-light py-1">
+            <h6 class="text-center ">Toqa & Amira design</h6>
+            <p  class="text-center ">copy right &copy; 2021</p>
+        </footer>
+
+        <script src="head.js"></script>
+
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+
+        <script src="buy_java.js"></script>
+           
+
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+           .con
+            {
+                background-image: url("./image/pharm.jpg");
+                height: 470px;
+                /* width: auto;  */
+                background-position: center;
+                background-size: cover;
+
+            }
+            #buy , #sell {
+                width: 100px;
+                height: 60px;
+            }
+            #add_user {
+                height: 60px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+      
+        <header class="border bg-dark text-light py-3 m-0">
+            <div class="container">
+                <div class="input-group-append">
+                    <h3 id="name" class=" mr-auto"> Hi </h3>
+                    <button id="sign" class="btn btn-secondary "> sign out</button>
+                 </div>  
+            </div>
+        </header>
+
+        <div class="con ">
+            <div class="container">
+                <button id="buy" type="button" class="btn btn-primary my-5">buy</button>
+                  
+                <button id="sell" type="button" class="btn btn-primary m-5">sell</button>
+                <br>
+                <button id="add_user" type="button" class="btn btn-primary my-5">add new user</button>
+            </div>
+        </div>
+
+        <footer class="border bg-dark text-light py-1">
+            <h6 class="text-center ">Toqa & Amira design</h6>
+            <p  class="text-center ">copy right &copy; 2021</p>
+        </footer>
+
+        <script src="head.js"></script>
+
+        <script>
+
+
+            let but2 = document.querySelector("#buy");
+            but2.addEventListener("click",function(){  location.href ="buy.html"; });
+
+            let but3 = document.querySelector("#sell");
+            but3.addEventListener("click",function(){ location.href ="sell.html"; });
+
+            let but4 = document.querySelector("#add_user");
+            but4.addEventListener("click",function(){ location.href ="add user.html"; });
+            
+        </script>
+        
+    </body>
+</html>

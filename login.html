@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+           .con
+            {
+                background-image: url("./image/pharm.jpg");
+                height: 470px;
+                /* width: auto;  */
+                background-position: center;
+                background-size: cover;
+
+            }
+            #log {
+                width: 100px;
+                height: 60px;
+            }
+            label{
+                width:  90px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <header class="border bg-dark text-light py-3 m-0">
+            <div class="container">
+                <div class="input-group-append">
+                    <h3 id="name" class=" mr-auto"> Log in </h3>
+                 </div>  
+            </div>
+        </header>
+
+        <div class="con ">
+            <div class="container">
+                <label for="username" class="my-3">Name</label>
+                <input id="username" type="text" class="my-3" > 
+
+                <br>
+                <label for="pass" class="my-3">Password</label>
+                <input id="pass" type="password" >
+
+                <br>
+                <button id="log" type="button" class="btn btn-primary my-5"> Log in</button>
+                 
+
+            </div>
+        </div>
+
+        <footer class="border bg-dark text-light py-1">
+            <h6 class="text-center ">Toqa & Amira design</h6>
+            <p  class="text-center ">copy right &copy; 2021</p>
+        </footer>
+
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+
+        <script src="log_java.js"></script>
+
+    </body>
+</html>
