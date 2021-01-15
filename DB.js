@@ -2,7 +2,7 @@ var db = openDatabase('pharmacy', '1.0', 'pharmacy DB', 2 * 1024 * 1024);
 
 db.transaction(function (tx) { 
     tx.executeSql('CREATE TABLE IF NOT EXISTS USERS (username UNIQUE not null,  password NOT NULL , type ,active )'); 
-    tx.executeSql('INSERT INTO USERS VALUES ("toqa","toqa","admin","True")'); 
+    tx.executeSql('INSERT INTO USERS VALUES ("toqa","toqa","admin","False")'); 
  })
 
 
